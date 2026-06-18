@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "author": "Tim Green",
-  "repository": { 
-    "type": "git", 
-    "url": "https://github.com/tim-green/timeguy-react"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tim-green/timeguy-app"
   },
   "engines": {
     "node": ">=22.12.0"
