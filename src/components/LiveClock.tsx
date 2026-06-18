@@ -97,7 +97,7 @@ export default function LiveClock({ initialTz, initialLabel }: Props) {
           height: 7px;
           border-radius: 50%;
           background: var(--signal);
-          box-shadow: 0 0 0 0 rgba(84, 232, 58, 0.6);
+          box-shadow: 0 0 0 0 rgba(84, 232, 58, 0.60);
           animation: live-pulse 2s ease-out infinite;
         }
 
