@@ -97,12 +97,12 @@ export default function LiveClock({ initialTz, initialLabel }: Props) {
           height: 7px;
           border-radius: 50%;
           background: var(--signal);
-          box-shadow: 0 0 0 0 rgba(232, 71, 58, 0.6);
+          box-shadow: 0 0 0 0 rgba(84, 232, 58, 0.6);
           animation: live-pulse 2s ease-out infinite;
         }
 
         @keyframes live-pulse {
-          0% { box-shadow: 0 0 0 0 rgba(232, 71, 58, 0.55); }
+          0% { box-shadow: 0 0 0 0 rgba(81, 232, 58, 0.55); }
           70% { box-shadow: 0 0 0 7px rgba(232, 71, 58, 0); }
           100% { box-shadow: 0 0 0 0 rgba(232, 71, 58, 0); }
         }
