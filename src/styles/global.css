@@ -1,0 +1,85 @@
+/* Importing fonts from google */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Expanded:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  color-scheme: dark;
+  /* Colour tokens — brass and ink chronometer */
+  --ink: #0b0d10;
+  --ink-raised: #12151a;
+  --bone: #f5f2ea;
+  --bone-dim: #cfc9ba;
+  --brass: #c9a574;
+  --brass-bright: #e2c08f;
+  --verdigris: #3e5c50;
+  --verdigris-bright: #5d8a76;
+  --signal: #e8473a;
+  --slate: #6b6e73;
+  --hairline: rgba(245, 242, 234, 0.12);
+
+  /* Type */
+  --font-display: "Archivo Expanded", "Space Grotesk", sans-serif;
+  --font-mech: "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--ink);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201, 165, 116, 0.08), transparent),
+    repeating-linear-gradient(
+      transparent,
+      transparent 39px,
+      rgba(245, 242, 234, 0.018) 40px
+    );
+  color: var(--bone);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+   &:hover{
+    color: var(--bone-dim);
+    transition: color 0.5s ease-in-out;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+select,::picker(select) {
+  appearance: base-select;
+  background: var(--ink);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before,*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--ink);
+}
