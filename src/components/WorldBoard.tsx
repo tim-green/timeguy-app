@@ -331,8 +331,9 @@ export default function WorldBoard() {
         }
         
         @media (max-width: 640px) {
-          .world-board { padding: 1.25rem 1.25rem 0.4rem; }
+          .world-board { padding: 1.25rem 1.25rem 0.4rem; margin-bottom: 1.5rem;}
           .world-board__remove { right: -0.2rem; }
+
         }
       `}</style>
     </div>
