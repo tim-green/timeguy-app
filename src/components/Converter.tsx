@@ -314,6 +314,7 @@ export default function Converter() {
         @media (max-width: 560px) {
           .converter { padding: 1.25rem; }
           .converter__readout-time { font-size: 1.4rem; }
+          .converter__field{display: contents;}
         }
       `}</style>
     </div>
