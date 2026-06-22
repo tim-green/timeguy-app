@@ -24,12 +24,8 @@
   --font-mono: "IBM Plex Mono", monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
+* { box-sizing: border-box;}
+html,body {
   margin: 0;
   padding: 0;
 }
@@ -37,17 +33,19 @@ body {
 body {
   background: var(--ink);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201, 165, 116, 0.08), transparent),
-    repeating-linear-gradient(
-      transparent,
-      transparent 39px,
-      rgba(245, 242, 234, 0.018) 40px
-    );
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201, 165, 116, 0.08), transparent),repeating-linear-gradient(
+      transparent,transparent 39px,rgba(245, 242, 234, 0.018) 40px
+  );
   color: var(--bone);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--ink);
 }
 
 a {
@@ -72,15 +70,11 @@ select,::picker(select) {
   border: 1px solid var(--hairline);
   border-radius: 8px;
 }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before,*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-::selection {
-  background: var(--brass);
-  color: var(--ink);
 }
