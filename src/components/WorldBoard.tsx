@@ -94,6 +94,7 @@ function CityRow({ city, now }: { city: City; now: Date }) {
           position: relative;
           height: 7px;
           border-radius: 3px;
+          border: 1px solid var(--hairline);
           background: linear-gradient(
             90deg,
             var(--ink-raised) 0%,
