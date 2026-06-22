@@ -10,7 +10,7 @@ export interface City {
 }
 
 export const CITIES: City[] = [
-  { id: "sf", city: "San Francisco", country: "USA", tz: "America/Los_Angeles", lat: 37.77, lon: -122.42 },
+  { id: "sf", city:  "San Francisco", country: "USA", tz: "America/Los_Angeles", lat: 37.77, lon: -122.42 },
   { id: "nyc", city: "New York", country: "USA", tz: "America/New_York", lat: 40.71, lon: -74.01 },
   { id: "mex", city: "Mexico City", country: "Mexico", tz: "America/Mexico_City", lat: 19.43, lon: -99.13 },
   { id: "sao", city: "São Paulo", country: "Brazil", tz: "America/Sao_Paulo", lat: -23.55, lon: -46.63 },
