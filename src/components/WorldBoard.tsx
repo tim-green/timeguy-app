@@ -321,7 +321,7 @@ export default function WorldBoard() {
         }
 
         .world-board__remove:hover {
-          color: var(--signal);
+          color: var(--delete);
         }
 
         .world-board__empty {
