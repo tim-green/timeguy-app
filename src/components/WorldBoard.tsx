@@ -308,8 +308,8 @@ export default function WorldBoard() {
 
         .world-board__remove {
           position: absolute;
-          right: -0.4rem;
-          top: 0.4rem;
+          right: -1.4rem;
+          top: 1rem;
           background: transparent;
           border: none;
           color: var(--slate);
